@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Thomson Kuboja</title>
+  <meta name="description" content="Explore projects by Thomson Kuboja, including web designing" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Thomson Kuboja</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+  </nav><br><br>
+
+  <button id="theme-toggle">Toggle Dark/Light</button>
+  </header>
+
+  <main>
+    <section id="projects" aria-labelledby="projectsHeading" class="projects-section">
+      <h2 id="projectsHeading">Projects</h2><br><br>
+
+      <article class="project-card">
+        <div class="project-text">
+          <h3>E-commerce website</h3>
+          <p>A secure and transparent online platform where people can trade.</p><br>
+          <button class="toggle-details" aria-expanded="false" aria-controls="project1Details">Show Details</button>
+          <div id="project1Details" class="project-details" hidden>
+            <p>Implemented with PHP framework called Laravel for backend smart and integrated React framework for front-end.</p>
+          </div>
+        </div><br>
+        <img src="images/ecomm2.png" alt="Screenshot of Blockchain Voting System" class="project-image" />
+      </article>
+
+      <article class="project-card">
+        <div class="project-text">
+          <h3>Personal Portfolio Website</h3>
+          <p>My professional portfolio showcasing skills and projects.</p><br>
+          <button class="toggle-details" aria-expanded="false" aria-controls="project2Details">Show Details</button>
+          <div id="project2Details" class="project-details" hidden>
+            <p>Built using HTML5, CSS3, and JavaScript with responsive design.</p>
+          </div>
+        </div><br>
+        <img src="images/portf.jpeg" alt="Screenshot of Portfolio Website" class="project-image" />
+      </article>
+
+      <article class="project-card">
+        <div class="project-text">
+          <h3>Multiplatform Performance Evaluation app</h3>
+          <p>Jetpack Compose and kotlin for Android and flutter for IOS.</p><br>
+          <button class="toggle-details" aria-expanded="false" aria-controls="project3Details">Show Details</button>
+          <div id="project3Details" class="project-details" hidden>
+            <p>Includes Departments section , Search, and Individual workers screens.</p>
+          </div>
+        </div><br>
+        <img src="images/pe2.jpeg" alt="Screenshot of Instagram UI Clone" class="project-image" />
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Thomson Kuboja</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

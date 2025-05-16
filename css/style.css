@@ -1,0 +1,284 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f6fb;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Layout wrapper for main content */
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+}
+
+/* Header */
+header {
+  background-color: #2c3e50; /* Dark Slate Blue */
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #f0f4fa;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  background-color: #34495e; /* Slightly lighter slate */
+}
+
+/* Hero Section */
+#hero {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #e6f0ff;
+}
+
+#hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+#hero p {
+  max-width: 600px;
+  margin: 0.5rem auto;
+  font-size: 1.1rem;
+}
+
+/* Highlights Section */
+#highlights {
+  background-color: #ffffff;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+#highlights h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+#highlights ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 0;
+  text-align: left;
+}
+
+#highlights li {
+  margin: 0.8rem 0;
+  font-size: 1.05rem;
+}
+
+/* Media Section */
+#media {
+  background-color: #e6f0ff;
+  text-align: center;
+  padding: 2rem;
+}
+
+#media h2 {
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+iframe {
+  width: 90%;
+  max-width: 700px;
+  height: 400px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Form Styling */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #003366;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  border-color: #2980b9; /* Bright blue focus */
+}
+
+/* Form Buttons */
+form button,
+button,
+input[type="submit"] {
+  background-color: #27ae60; /* Emerald Green */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover,
+button:hover,
+input[type="submit"]:hover {
+  background-color: #2ecc71; /* Light green hover */
+}
+
+/* Greeting message style */
+.greeting {
+  background-color: #e6f0ff;
+  color: #003366;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background-color:#2c3e50 ; /* Pumpkin Orange */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero h2 {
+    font-size: 1.8rem;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
+
+/* ------------------------- */
+/* DARK THEME OVERRIDES BELOW */
+/* ------------------------- */
+
+body.dark-theme {
+  background-color: #0b2545;
+  color: #e0e0e0;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+  background-color: #0d1a26;
+  color: #f0f0f0;
+}
+
+body.dark-theme nav a {
+  color: #f0f0f0;
+}
+
+body.dark-theme nav a:hover,
+body.dark-theme nav a[aria-current="page"] {
+  background-color: #336699;
+}
+
+body.dark-theme .greeting {
+  background-color: #1a3a66;
+  color: #cbd5e1;
+}
+
+body.dark-theme form {
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+}
+
+body.dark-theme input,
+body.dark-theme textarea,
+body.dark-theme select {
+  background-color: #444;
+  color: #fff;
+  border-color: #666;
+}
+
+body.dark-theme form button,
+body.dark-theme button,
+body.dark-theme input[type="submit"] {
+  background-color: #336699;
+  color: #fff;
+}
+
+body.dark-theme #hero,
+body.dark-theme #media {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-theme #highlights {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+body.dark-theme #highlights h2 {
+  color: #ffcc00;
+}
+
+body.dark-theme #highlights li {
+  color: #e0e0e0;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Thomson Kuboja</title>
+  <meta name="description" content="Contact Thomson Kuboja via this form" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Thomson Kuboja</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav><br><br>
+
+  <button id="theme-toggle">Toggle Dark/Light</button>
+  </header>
+
+  <main>
+    <section id="contact" aria-labelledby="contactHeading">
+      <h2 id="contactHeading">Contact Me</h2>
+      <form name="contactForm" id="contactForm" onsubmit="return validateContactForm()" novalidate>
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+        <label for="phone">Phone *</label>
+        <input type="tel" id="phone" name="phone" placeholder="+255..." pattern="^\+?[0-9\s\-]{7,15}$" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Thomson Kuboja</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survey – Thomson Kuboja</title>
+  <meta name="description" content="Take a quick survey to share your feedback" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Thomson Kuboja</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html" aria-current="page">Survey</a></li>
+      </ul>
+    </nav>
+    <br><br>
+
+  <button id="theme-toggle">Toggle Dark/Light</button>
+  </header>
+
+  <main>
+    <section id="survey" aria-labelledby="surveyHeading">
+      <h2 id="surveyHeading">Survey</h2>
+      <p>Please take a moment to share your feedback. Your input helps me improve!</p>
+
+      <form id="surveyForm" onsubmit="return validateSurveyForm()" novalidate>
+        <fieldset>
+          <legend>How did you hear about me?</legend>
+          <label><input type="radio" name="referral" value="Friend" required /> Friend</label>
+          <label><input type="radio" name="referral" value="Social Media" /> Social Media</label>
+          <label><input type="radio" name="referral" value="Search Engine" /> Search Engine</label>
+          <label><input type="radio" name="referral" value="Other" /> Other</label>
+        </fieldset>
+
+        <label for="improvement">What can I improve?</label>
+        <textarea id="improvement" name="improvement" rows="4" placeholder="Your suggestions"></textarea>
+
+        <button type="submit">Submit Survey</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Thomson Kuboja</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
